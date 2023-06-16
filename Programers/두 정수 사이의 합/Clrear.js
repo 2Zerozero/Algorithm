@@ -31,3 +31,21 @@ function solution(a, b) {
     
     return answer;
 }
+
+function solution(a, b) {
+    // Math.abs: 주어진 숫자의 절대값을 반환
+    return ((a + b) * (Math.abs(b - a) + 1)) / 2;
+}
+
+
+function solution(a, b) {
+    var answer = 0;
+    let min = Math.min(a, b);
+    let max = Math.max(a, b);
+
+    for(let i = min; i <= max; i++) {
+        answer += i;
+    }
+
+    return answer;
+}
