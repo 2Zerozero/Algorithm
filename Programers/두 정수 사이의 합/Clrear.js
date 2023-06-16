@@ -34,6 +34,7 @@ function solution(a, b) {
 
 function solution(a, b) {
     // Math.abs: 주어진 숫자의 절대값을 반환
+    // 음수가 안나오기 때문에, 순서를 신경 쓸 필요가 없다.
     return ((a + b) * (Math.abs(b - a) + 1)) / 2;
 }
 
