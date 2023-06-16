@@ -12,3 +12,9 @@ function solution(phone_number) {
     
     return answer;
 }
+
+// 다른 풀이법
+function solution(phone_number) {
+    const leng = phone_number.length - 4;
+    return "*".repeat(leng) + phone_number.substring(leng);
+}
