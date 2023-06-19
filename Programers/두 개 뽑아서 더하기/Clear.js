@@ -13,6 +13,7 @@ function solution(numbers) {
     var answer = [];
     
     for(let i = 0; i < numbers.length; i++) {
+        // 이중 반복문의 이유: 두 개의 수를 뽑아 더하는 수를 만들어야하기 때문.
         for(let j = i+1; j < numbers.length; j++) {
             // includes: 특정 값을 포함하고 있는지 확인하는 배열 메서드
             // answer 배열에, numbers[i] + numbers[j] 의 값이 없다면, push
