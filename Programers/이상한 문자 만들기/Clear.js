@@ -29,3 +29,28 @@ function solution(s) {
     return answer;
 }
 
+// 다른풀이법
+function solution(s) {
+    // 1. 각 단어의 짝수번째 알파벳은 "대문자"
+    // 2. 홀수 번째 알파벳은 "소문자"
+    // 3. 0번째 인덱스는 짝수로 취급
+    
+    var answer = '';
+    // 단어 분리
+    let words = s.split(" ");
+    
+    for(let i = 0; i < words.length; i++) {
+        for(let j = 0; j < words[i].length; j++) {
+            if(j % 2 === 0) {
+                answer += words[i][j].toUpperCase()
+            }else {
+                answer += words[i][j].toLowerCase()
+            }
+        }
+        if (i !== words.length - 1) { // 마지막 단어가 아닌 경우에만 공백 추가
+            answer += ' ';
+        }
+    }
+    
+    return answer;
+}
