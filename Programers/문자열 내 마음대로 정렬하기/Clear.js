@@ -21,6 +21,12 @@ function solution(strings, n) {
 
 // 다른방법 코드
 
+// sort() 메서드의 비교 함수에서 -1, 0, 1을 반환하는 것은 각각 위의 세 가지 경우를 의미
+
+// -1을 반환하면, 첫 번째 요소(prev)를 두 번째 요소(next)보다 앞으로 이동 (prev < next)
+// 0을 반환하면, 요소의 순서를 변경하지 않는다 (prev = next)
+// 1을 반환하면, 첫 번째 요소(prev)를 두 번째 요소(next)보다 뒤로 이동 (prev > next)
+
 function solution(strings, n) {
     // n번째 글자를 기준으로 오름차순 정렬
     return strings.sort((prev, next) => {
