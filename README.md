@@ -1,10 +1,6 @@
 # Algorithm
-알고리즘 문제를 풀고, Git 에 업로드합니다.
+알고리즘 문제를 풀고, GitHub 에 자동으로 업로드합니다.
 
-### 🎁 Commit Message
-✔. Algorithm : 알고리즘 문제 풀이 완료. <br>
-❌. Algorithm : 알고리즘 문제 풀이 실패. <br>
-⚙. Problem : 새로운 풀이 추가 <br>
-📝. Docs : 문서 수정. <br>
-
+### Commit
+백준허브를 통하여, 백준, 프로그래머스, SWEA 알고리즘 문제를 해결하면 등록한 GitHub Repository 에 풀이와 문제요약이 등록됩니다.
 
