@@ -8,9 +8,14 @@ function solution(s){
     for(let i = 0; i < s.length; i++) {
         if(s[i] === '(') {
             stack.push(s[i]);
-        }else if(stack.pop() === undefined) { // stack.pop() 이 실행되며 undefined 라면, 실행
-            answer = false;
-            break;
+        }else {
+            // 스택이 비어있는 경우
+            let poppedElement = stack.pop(); // 스택에서 요소를 제거하고 반환
+            if (poppedElement === undefined) {
+                // pop 연산이 undefined를 반환하면 스택이 비어있는 경우임
+                answer = false;
+                break;
+            }
         }
     }
     
